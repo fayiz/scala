@@ -3,7 +3,7 @@ import scala.util.parsing.json.JSON
 
 object JsonParseFull {
   def main(args: Array[String]){
-    var inputJson = """{"Name" : "Srikant", "Age" : "20", "Colleagues":["Anant","Prabhakaran"], "Address":{"plotno":"D2","city":"Gurgaon"}}"""
+    var inputJson = """{"Name" : "Fayiz", "Age" : "35", "Colleagues":["Anshar","Jihad"], "Address":{"Street":"Ras Al Khor","city":"Dubai"}}"""
     
     JSON.parseFull(inputJson) match{
       case Some(myJson) => {
