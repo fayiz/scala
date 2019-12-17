@@ -24,5 +24,16 @@ object ListAndSet{
       println(x)
     }
     println("Distinct : " + listv.distinct)
+    
+    println("SUM : " + sum(listv))
+  }
+    
+  def sum(input: List[Int]): Int = {
+    var a = 0;
+    if(input.isEmpty){
+      a
+    }else{
+      input.head + sum(input.tail)
+    }
   }
 }
